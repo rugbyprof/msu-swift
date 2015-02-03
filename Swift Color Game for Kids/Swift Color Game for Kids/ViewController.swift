@@ -9,7 +9,6 @@
 import UIKit
 
 
-
 class ViewController: UIViewController {
     
     
@@ -47,9 +46,24 @@ class ViewController: UIViewController {
     
     var colorNames : [String] = ["Red","Green","Blue","Orange","Black","White","Brown","Purple","Gray","Yellow"]
     
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        matchColorLogic();
+        matchColorLogic()
+        
+        let read : String? = File.read("/Volumes/1_TB_HDD/griffin/Desktop/colors.json")
+        println(read!)
+        
+        
+        let write : Bool = File.write("/Volumes/1_TB_HDD/griffin/Desktop/colors2.json", content: "String to write")
+        //println(write)
+        
+//        let json:JSON = read
+//        //println(json)
+//        for (key: String, subJson: JSON) in json {
+//            println(key)
+//        }
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -193,4 +207,26 @@ class colorRGB {
         
     }
 }
+
+class File {
+    
+    class func exists (path: String) -> Bool {
+        return NSFileManager().fileExistsAtPath(path)
+    }
+    
+    class func read (path: String, encoding: NSStringEncoding = NSUTF8StringEncoding) -> String? {
+        if File.exists(path) {
+            return String(contentsOfFile: path, encoding: encoding, error: nil)
+        }
+        
+        return nil
+    }
+    
+    class func write (path: String, content: String, encoding: NSStringEncoding = NSUTF8StringEncoding) -> Bool {
+        return content.writeToFile(path, atomically: true, encoding: encoding, error: nil)
+    }
+}
+
+
+
 

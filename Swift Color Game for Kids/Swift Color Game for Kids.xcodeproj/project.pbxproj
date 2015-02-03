@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8514B4CC1A814BCF005F9715 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8514B4CB1A814BCF005F9715 /* SwiftyJSON.swift */; };
+		8514B4CE1A814C0B005F9715 /* colors.json in Resources */ = {isa = PBXBuildFile; fileRef = 8514B4CD1A814C0B005F9715 /* colors.json */; };
 		85B054261A7FF98600B60421 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B054251A7FF98600B60421 /* AppDelegate.swift */; };
 		85B054281A7FF98600B60421 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85B054271A7FF98600B60421 /* ViewController.swift */; };
 		85B0542B1A7FF98600B60421 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85B054291A7FF98600B60421 /* Main.storyboard */; };
@@ -28,6 +30,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8514B4CB1A814BCF005F9715 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		8514B4CD1A814C0B005F9715 /* colors.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = colors.json; sourceTree = "<group>"; };
 		85B054201A7FF98600B60421 /* Swift Color Game for Kids.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift Color Game for Kids.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		85B054241A7FF98600B60421 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		85B054251A7FF98600B60421 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -87,6 +91,8 @@
 				85B0542C1A7FF98600B60421 /* Images.xcassets */,
 				85B0542E1A7FF98600B60421 /* LaunchScreen.xib */,
 				85B054231A7FF98600B60421 /* Supporting Files */,
+				8514B4CB1A814BCF005F9715 /* SwiftyJSON.swift */,
+				8514B4CD1A814C0B005F9715 /* colors.json */,
 			);
 			path = "Swift Color Game for Kids";
 			sourceTree = "<group>";
@@ -201,6 +207,7 @@
 				85B054471A801B0B00B60421 /* thumbs_down.png in Resources */,
 				85B0542B1A7FF98600B60421 /* Main.storyboard in Resources */,
 				85B054301A7FF98600B60421 /* LaunchScreen.xib in Resources */,
+				8514B4CE1A814C0B005F9715 /* colors.json in Resources */,
 				85B054481A801B0B00B60421 /* thumbs_up.png in Resources */,
 				85B0542D1A7FF98600B60421 /* Images.xcassets in Resources */,
 			);
@@ -220,6 +227,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8514B4CC1A814BCF005F9715 /* SwiftyJSON.swift in Sources */,
 				85B054281A7FF98600B60421 /* ViewController.swift in Sources */,
 				85B054261A7FF98600B60421 /* AppDelegate.swift in Sources */,
 			);
@@ -415,6 +423,7 @@
 				85B054411A7FF98700B60421 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		85B054421A7FF98700B60421 /* Build configuration list for PBXNativeTarget "Swift Color Game for KidsTests" */ = {
 			isa = XCConfigurationList;
@@ -423,6 +432,7 @@
 				85B054441A7FF98700B60421 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
