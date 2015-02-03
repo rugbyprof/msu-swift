@@ -5,9 +5,9 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>01147BF9-E830-40EB-9944-C43D3C5DABEF</string>
+	<string>2EDD5D43-7358-40D0-B9C8-ADCA39983B79</string>
 	<key>IDESourceControlProjectName</key>
-	<string>Swift Color Game for Kids</string>
+	<string>JsonFileReader</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>119ACF4FAB6CB31AC86D740E720D538477620120</key>
@@ -16,13 +16,13 @@
 		<string>github.com:Alamofire/Alamofire.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Swift Color Game for Kids/Swift Color Game for Kids.xcodeproj</string>
+	<string>JsonFileReader/JsonFileReader.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>119ACF4FAB6CB31AC86D740E720D538477620120</key>
 		<string>../../..</string>
 		<key>67620B5EFA902936DF04070AF595B76AB0333747</key>
-		<string>../../../Swift%20Color%20Game%20for%20Kids/Swift%20Color%20Game%20for%20Kids/Alamofire/</string>
+		<string>../../..JsonFileReader/JsonFileReader/Alamofire/</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>github.com:rugbyprof/msu-swift.git</string>
