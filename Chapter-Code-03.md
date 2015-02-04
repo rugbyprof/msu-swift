@@ -237,6 +237,8 @@ extension GeoLocation {
 
 ##### `ViewController.swift` (end of `viewDidLoad()`)
 
+http://makeapppie.com/2014/08/04/the-swift-swift-tutorial-why-do-we-need-delegates/
+
 ```swift
 self.mapView.delegate = self
 self.mapView.addAnnotations(self.treasures)
