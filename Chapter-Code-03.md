@@ -231,7 +231,7 @@ extension GeoLocation {
 
 ## Inheriting from NSObject
 
-#### Add `NSObject` after `class Treasure` like so: `class Treasure: NSObject`
+##### Add `NSObject` after `class Treasure` like so: `class Treasure: NSObject`
 
 ## Pinning the map
 
