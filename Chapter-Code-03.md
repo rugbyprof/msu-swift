@@ -195,7 +195,7 @@ class HQTreasure: Treasure {
 import MapKit
 ```
 
-#### Underneath `class Treasure`
+##### Underneath `class Treasure`
 
 ```swift
 extension Treasure: MKAnnotation {
@@ -213,6 +213,7 @@ extension Treasure: MKAnnotation {
 ```swift
 import MapKit
 ```
+##### Underneath `struct GeoLocation`
 
 ```swift
 extension GeoLocation {
@@ -221,6 +222,133 @@ extension GeoLocation {
     }
     var mapPoint: MKMapPoint {
         return MKMapPointForCoordinate(self.coordinate)
+    }
+}
+```
+
+## Inheriting from NSObject
+
+#### Add `NSObject` after `class Treasure` like so: `class Treasure: NSObject`
+
+## Pinning the map
+
+##### `ViewController.swift` (end of `viewDidLoad()`)
+
+```swift
+self.mapView.delegate = self
+self.mapView.addAnnotations(self.treasures)
+```
+
+#### End of `ViewController.swift`
+
+```swift
+extension ViewController: MKMapViewDelegate {
+    func mapView(mapView: MKMapView!,viewForAnnotation annotation: MKAnnotation!)-> MKAnnotationView!{
+        // 1
+        if let treasure = annotation as? Treasure {
+            // 2
+            var view = mapView.dequeueReusableAnnotationViewWithIdentifier("pin") as MKPinAnnotationView!
+                
+            if view == nil {
+            // 3
+                view = MKPinAnnotationView(annotation: annotation,reuseIdentifier: "pin")
+                view.canShowCallout = true
+                view.animatesDrop = false
+                view.calloutOffset = CGPoint(x: -5, y: 5)
+                view.rightCalloutAccessoryView = UIButton.buttonWithType(.DetailDisclosure) as UIView} else {
+                // 4
+                view.annotation = annotation
+            }
+            // 5
+            return view
+        }
+        return nil
+    }
+}
+```
+
+## The reduce algorithm
+
+##### End of viewDidLoad()
+
+```swift
+        let rectToDisplay = self.treasures.reduce(MKMapRectNull) {
+            (mapRect: MKMapRect, treasure: Treasure) -> MKMapRect in
+            let treasurePointRect = MKMapRect(origin: treasure.location.mapPoint, size: MKMapSize(width: 0, height: 0))
+            return MKMapRectUnion(mapRect, treasurePointRect)
+        }
+        self.mapView.setVisibleMapRect(rectToDisplay, edgePadding: UIEdgeInsetsMake(74, 10, 10, 10), animated: false)
+```
+
+## Polymorphism
+
+##### End of `Treasure.swift` / `class Treasure`
+
+```swift
+func pinColor() -> MKPinAnnotationColor {
+  return MKPinAnnotationColor.Red
+}
+```
+
+#### Add the override to History and HQTreasure
+
+```swift
+func pinColor() -> MKPinAnnotationColor {
+  return MKPinAnnotationColor.Green
+}
+
+func pinColor() -> MKPinAnnotationColor {
+  return MKPinAnnotationColor.Purple
+}
+```
+##### At the end of `extension ViewController: MKMapViewDelegate` before the return
+
+```swift
+view.pinColor = treasure.pinColor()
+```
+
+## Dynamic dispatch and final classes
+
+```swift
+
+final class HistoryTresure: Treasure
+final class FactTreasure: Treasure
+final class HQTreasure: Treasure
+```
+
+## Adding annotations
+
+```swift
+@objc protocol Alertable {
+   func alert() -> UIAlertController
+}
+```
+
+##### Add to bottom of Treasure.swift
+
+```swift
+extension HistoryTreasure: Alertable {
+    func alert() -> UIAlertController {
+        let alert = UIAlertController(title: "History",
+                                      message: "From \(self.year):\n\(self.what)",
+                                      preferredStyle: UIAlertControllerStyle.Alert)
+        return alert
+    }
+}
+extension FactTreasure: Alertable {
+    func alert() -> UIAlertController {
+        let alert = UIAlertController(title: "Fact",
+                                      message: "From \(self.what):\n\(self.fact)",
+                                      preferredStyle: UIAlertControllerStyle.Alert)
+        return alert
+    }
+}
+extension HQTreasure: Alertable {
+    func alert() -> UIAlertController {
+        let alert = UIAlertController(title: "Headquarters",
+                                      message: "The headquarters of \(self.company)",
+                                      preferredStyle: UIAlertControllerStyle.Alert)
+        return alert
     }
 }
 ```
