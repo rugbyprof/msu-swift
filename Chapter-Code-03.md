@@ -90,6 +90,7 @@ var classB = classA
 ```
 
 ## Class inheritance
+#### Treasure.swift
 ```swift
 class HistoryTreasure: Treasure {
         
