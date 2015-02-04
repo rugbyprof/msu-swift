@@ -352,3 +352,119 @@ extension HQTreasure: Alertable {
     }
 }
 ```
+##### Add to `MKMapViewDelegate extension`
+
+```swift
+    func mapView(mapView: MKMapView!,annotationView view: MKAnnotationView!,calloutAccessoryControlTapped control: UIControl!){
+        if let treasure = view.annotation as? Treasure {
+            if let alertable = treasure as? Alertable {
+                let alert = alertable.alert()
+                alert.addAction(
+                    UIAlertAction(
+                        title: "OK",
+                        style: UIAlertActionStyle.Default,
+                        handler: nil
+                    )
+                )
+                self.presentViewController(
+                    alert, animated: true, completion: nil
+                )
+            }
+        }
+    }
+```
+
+## Sorting an array
+
+##### Open GeoLocation.swift
+
+```swift
+    func distanceBetween(other: GeoLocation) -> Double {
+        let locationA = CLLocation(latitude: self.latitude,longitude: self.longitude)
+        let locationB = CLLocation(latitude: other.latitude,longitude: other.longitude)
+        return locationA.distanceFromLocation(locationB)
+    }
+```
+
+##### Open ViewController.swift add before call to `presentViewController`
+
+```swift
+    alert.addAction(UIAlertAction(title: "Find Nearest",style: UIAlertActionStyle.Default) { action in
+        var sortedTreasures = self.treasures
+        sortedTreasures.sort {
+            let distanceA = treasure.location.distanceBetween($0.location)
+            let distanceB = treasure.location.distanceBetween($1.location)
+            return distanceA < distanceB
+        }
+        mapView.deselectAnnotation(treasure, animated: true)
+        mapView.selectAnnotation(sortedTreasures[1], animated: true)
+    })
+```
+
+## Equality and operator overload
+
+##### Open `ViewController.swift` add underneath `var treasures: [Treasure] = []`
+
+```swift
+    func mapView(mapView: MKMapView!, rendererForOverlay overlay: MKOverlay!) -> MKOverlayRenderer!{
+        if let polylineOverlay = overlay as? MKPolyline {
+            let renderer = MKPolylineRenderer(polyline: polylineOverlay)
+            renderer.strokeColor = UIColor.blueColor()
+            return renderer
+        }
+        return nil
+    }
+```
+
+##### Find `mapView:annotationView:calloutAccessoryControlTapped` add this between the two actions already present
+
+```swift
+    alert.addAction(UIAlertAction(
+        title: "Found",
+        style: UIAlertActionStyle.Default) { action in
+        self.markTreasureAsFound(treasure)
+    })
+```
+
+##### Add this function to the main body of the `viewControllers` class:
+
+```swift
+    func markTreasureAsFound(treasure: Treasure) {
+        if let index = find(self.foundLocations, treasure.location) {
+            let alert = UIAlertController(
+            title: "Oops!",
+            message: "You've already found this treasure (at step \(index + 1))! Try again!",
+                preferredStyle: .Alert)
+                alert.addAction(UIAlertAction(title: "OK",
+                style: .Default,
+                handler: nil)
+            )
+            self.presentViewController(alert,
+                animated: true,
+                completion: nil)
+        } else {
+            self.foundLocations.append(treasure.location)
+            if self.polyline != nil {
+                self.mapView.removeOverlay(self.polyline)
+            }
+            var coordinates = self.foundLocations.map { $0.coordinate }
+            self.polyline = MKPolyline(coordinates: &coordinates,
+            count: coordinates.count)
+            self.mapView.addOverlay(self.polyline)
+        }
+    }
+```
+
+##### Should be an error dealing with `find()` because we need to overload the `==`
+
+##### At the bottom of `GeoLocation.swift`
+
+```swift
+extension GeoLocation: Equatable {
+}
+
+func ==(lhs: GeoLocation, rhs: GeoLocation) -> Bool {
+    return lhs.latitude == rhs.latitude &&
+    lhs.longitude == rhs.longitude
+}
+```
