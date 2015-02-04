@@ -207,3 +207,20 @@ extension Treasure: MKAnnotation {
     }
 }
 ```
+
+#### Geolocation.swift
+
+```swift
+import MapKit
+```
+
+```swift
+extension GeoLocation {
+    var coordinate: CLLocationCoordinate2D {
+        return CLLocationCoordinate2DMake(self.latitude, self.longitude)
+    }
+    var mapPoint: MKMapPoint {
+        return MKMapPointForCoordinate(self.coordinate)
+    }
+}
+```
