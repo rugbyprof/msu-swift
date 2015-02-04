@@ -208,6 +208,9 @@ extension Treasure: MKAnnotation {
 }
 ```
 
+At the moment, this code doesn’t compile because it’s accessing a property on the
+location called coordinate that doesn’t exist. Let’s implement that now.
+
 #### Geolocation.swift
 
 ```swift
