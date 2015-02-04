@@ -58,6 +58,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8514B5F31A82A034005F9715 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8514B5EE1A8282A8005F9715 /* Treasure.swift */,
+				8514B5F01A8283A8005F9715 /* GeoLocation.swift */,
+				C982FA1B194DAB5E00EFCAFD /* AppDelegate.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		8514B5F41A82A03C005F9715 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C982FA1F194DAB5E00EFCAFD /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		8514B5F51A82A042005F9715 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C982FA1D194DAB5E00EFCAFD /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 		C982FA0D194DAB5E00EFCAFD = {
 			isa = PBXGroup;
 			children = (
@@ -79,11 +105,9 @@
 		C982FA18194DAB5E00EFCAFD /* TreasureHunt */ = {
 			isa = PBXGroup;
 			children = (
-				C982FA1B194DAB5E00EFCAFD /* AppDelegate.swift */,
-				C982FA1D194DAB5E00EFCAFD /* ViewController.swift */,
-				C982FA1F194DAB5E00EFCAFD /* Main.storyboard */,
-				8514B5EE1A8282A8005F9715 /* Treasure.swift */,
-				8514B5F01A8283A8005F9715 /* GeoLocation.swift */,
+				8514B5F51A82A042005F9715 /* Controller */,
+				8514B5F41A82A03C005F9715 /* View */,
+				8514B5F31A82A034005F9715 /* Model */,
 				C982FA22194DAB5E00EFCAFD /* Images.xcassets */,
 				C982FA19194DAB5E00EFCAFD /* Supporting Files */,
 			);
