@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import Alamofire
 
 
 class ViewController: UIViewController {
@@ -24,8 +23,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var btnAnswer3OUTLET: UIButton!
     
     var buttonAnswer = 0
+    var lastButtonAnswer = 0
     
     var colorNumber = 0
+    var lastColorNumber = 0
     
     var button1Correct = false
     var button2Correct = false
@@ -65,7 +66,7 @@ class ViewController: UIViewController {
         let url = "https://raw.githubusercontent.com/rugbyprof/msu-swift/master/Swift%20Color%20Game%20for%20Kids/Swift%20Color%20Game%20for%20Kids/colors.json?token=AA_qiMX6aezCbZRcASGFVWX5IFfGJ2pwks5U2nY9wA%3D%3D"
 
         //Run alamo library get request to grab the json data
-        Alamofire.request(.GET, url)
+        request(.GET, url)
             .responseJSON { (req, res, json, error) in
                 if(error != nil) {
                     println("Error: \(error)")
@@ -141,8 +142,19 @@ class ViewController: UIViewController {
     
     
     func matchColorLogic() -> Bool{
+        
         buttonAnswer = Int(arc4random_uniform(3))
+        while buttonAnswer == lastButtonAnswer {
+            buttonAnswer = Int(arc4random_uniform(3))
+        }
+        lastButtonAnswer = buttonAnswer
+        
+        
         colorNumber = Int(arc4random_uniform(10))
+        while colorNumber == lastButtonAnswer {
+            colorNumber = Int(arc4random_uniform(10))
+        }
+        lastColorNumber = colorNumber
         
         changeColor()
         
