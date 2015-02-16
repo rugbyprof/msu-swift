@@ -102,3 +102,27 @@ if (enteredDoorCode && passedRetinaScan) || hasDoorKey || knowsOverridePassword 
     println("ACCESS DENIED")
 }
 ```
+
+-----
+
+##### NOTE
+
+>It is good practice to create immutable collections in all cases where the collection does not need to change. Doing so enables the Swift compiler to optimize the performance of the collections you create.
+
+-----
+
+```swift
+for (index, value) in enumerate(shoppingList) {
+    println("Item \(index + 1): \(value)")
+}
+```
+
+----- 
+
+Initialize an empty array:
+
+```swift
+var someInts = [Int]()
+```
+
+-----
