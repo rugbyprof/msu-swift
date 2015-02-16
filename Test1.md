@@ -9,4 +9,8 @@ Given:
 var surveyAnswer: String?
 ```
 
-What is the value of `surveyAnswer`?
+What would the following output?
+```swift
+println(surveyAnswer) 
+```
+-----
