@@ -28,3 +28,20 @@ println(surveyAnswer)
 An optional value is currently nil, but a non-nil value is essential for subsequent code to execute successfully.
 
 -----
+
+```swift
+let b = 10
+var a = 5
+a = b
+```
+
+What is the value of `a`?
+
+-----
+
+let (x, y) = (1, 2)
+// x is equal to 1, and y is equal to 2
+
+-----
+
+
