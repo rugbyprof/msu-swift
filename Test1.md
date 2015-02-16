@@ -16,6 +16,7 @@ What would the following output?
 println(surveyAnswer) 
 ```
 -----
+#### NOTE
 
 ##### Assertions
 
@@ -40,13 +41,14 @@ a = b
 What is the value of `a`?
 
 -----
+#### NOTE
 
 ```swift
 let (x, y) = (1, 2)
 // x is equal to 1, and y is equal to 2
 ```
 -----
-
+#### NOTE
 ```swift
 var a = 0
 let b = ++a
@@ -79,6 +81,7 @@ if hasHeader {
 ```
 
 -----
+#### NOTE
 
 Range Operators:
 
@@ -107,7 +110,7 @@ if (enteredDoorCode && passedRetinaScan) || hasDoorKey || knowsOverridePassword 
 
 -----
 
-##### NOTE
+#### NOTE
 
 >It is good practice to create immutable collections in all cases where the collection does not need to change. Doing so enables the Swift compiler to optimize the performance of the collections you create.
 
@@ -120,6 +123,7 @@ for (index, value) in enumerate(shoppingList) {
 ```
 
 ----- 
+#### NOTE
 
 Initialize an empty array:
 
