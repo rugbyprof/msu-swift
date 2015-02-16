@@ -55,13 +55,13 @@ let c = a++
 
 -----
 
-What are the differences between the code snippet below?
+What are the differences between the code snippets below?
 
 ```swift
 let contentHeight = 40
 let hasHeader = true
 let rowHeight = contentHeight + (hasHeader ? 50 : 20)
-// rowHeight is equal to 90
+// rowHeight is equal to ?
 ```
 
 ```swift
@@ -73,7 +73,7 @@ if hasHeader {
 } else {
     rowHeight = rowHeight + 20
 }
-// rowHeight is equal to 90
+// rowHeight is equal to ?
 ```
 
 -----
