@@ -1,3 +1,5 @@
+- Syntax errors, if found, are **not** intentional and should not be taken into account when answering questions (unless specifically instructed to do so).
+
 -----
 
 Whats the difference between a `tuple` and an `array` or `dictionary` type?
@@ -126,3 +128,29 @@ var someInts = [Int]()
 ```
 
 -----
+
+```swift
+var address = ("Number":3410, "Line 1":Taft Blvd", "Line 2":"Computer Science","City":"Wichita Falls","State":"Tx", "Zipcode":78245)
+```
+Write out the `City` portion of the `Tuple`:
+A: `println(address.City)`
+B: `println(address["City"])`
+C: `println(address.3)`
+D: `A & C`
+E: `A & B`
+
+-----
+
+```swift
+var dictionary = ["Bobs": "Dog", "Billys": "Cat", "Suzies": "Cow", "Beths": "Snake"]
+```
+
+Remove the entry "Billys":"Cat".
+-----
+
+enum CompassPoint {
+    case North
+    case South
+    case East
+    case West
+}
