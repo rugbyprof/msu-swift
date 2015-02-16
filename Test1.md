@@ -259,6 +259,8 @@ class VideoMode {
     var name: String?
 }
 
+let hd = Resolution(width: 1920, height: 1080)
+
 let someResolution = Resolution()
 
 let someVideoMode = VideoMode()
