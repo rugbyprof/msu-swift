@@ -52,3 +52,29 @@ let b = ++a
 let c = a++
 // a is now equal to 2, but c has been set to the pre-increment value of 1
 ```
+
+-----
+
+What are the differences between the code snippet below?
+
+```swift
+let contentHeight = 40
+let hasHeader = true
+let rowHeight = contentHeight + (hasHeader ? 50 : 20)
+// rowHeight is equal to 90
+```
+
+```swift
+let contentHeight = 40
+let hasHeader = true
+var rowHeight = contentHeight
+if hasHeader {
+    rowHeight = rowHeight + 50
+} else {
+    rowHeight = rowHeight + 20
+}
+// rowHeight is equal to 90
+```
+
+-----
+
