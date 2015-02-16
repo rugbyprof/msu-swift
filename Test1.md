@@ -92,3 +92,13 @@ for index in 1..<5 {
 ```
 
 -----
+
+Valid Syntax?
+
+```swift
+if (enteredDoorCode && passedRetinaScan) || hasDoorKey || knowsOverridePassword {
+    println("Welcome!")
+} else {
+    println("ACCESS DENIED")
+}
+```
