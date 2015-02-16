@@ -146,11 +146,32 @@ var dictionary = ["Bobs": "Dog", "Billys": "Cat", "Suzies": "Cow", "Beths": "Sna
 ```
 
 Remove the entry "Billys":"Cat".
+
 -----
 
+```swift
 enum CompassPoint {
     case North
     case South
     case East
     case West
 }
+
+directionToHead = .South
+switch directionToHead {
+case .North:
+    println("Lots of planets have a north")
+case .South:
+    println("Watch out for penguins")
+case .East:
+    println("Where the sun rises")
+case .West:
+    println("Where the skies are blue")
+}
+
+```
+
+Is this a valid `switch` statement?
+
+-----
+
