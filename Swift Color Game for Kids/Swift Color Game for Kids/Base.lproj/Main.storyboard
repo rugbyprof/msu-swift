@@ -59,15 +59,6 @@
                                     <rect key="frame" x="35" y="399" width="251" height="41"/>
                                 </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Correct / Incorrect" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sEf-1P-Aej">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="22"/>
-                                <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="35" y="507" width="251" height="41"/>
-                                </variation>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W7v-iN-haD">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -110,6 +101,15 @@
                                     <rect key="frame" x="16" y="153" width="288" height="238"/>
                                 </variation>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Correct / Incorrect" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sEf-1P-Aej">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="22"/>
+                                <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="35" y="507" width="251" height="41"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.0055509868421052631" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -118,10 +118,10 @@
                                 <exclude reference="aQI-4g-DZj"/>
                                 <exclude reference="gge-5g-Tg4"/>
                                 <exclude reference="yr4-Uz-ff8"/>
-                                <exclude reference="sEf-1P-Aej"/>
                                 <exclude reference="W7v-iN-haD"/>
                                 <exclude reference="AHT-oi-VLh"/>
                                 <exclude reference="NIu-4a-IKl"/>
+                                <exclude reference="sEf-1P-Aej"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -130,10 +130,10 @@
                                 <include reference="aQI-4g-DZj"/>
                                 <include reference="gge-5g-Tg4"/>
                                 <include reference="yr4-Uz-ff8"/>
-                                <include reference="sEf-1P-Aej"/>
                                 <include reference="W7v-iN-haD"/>
                                 <include reference="AHT-oi-VLh"/>
                                 <include reference="NIu-4a-IKl"/>
+                                <include reference="sEf-1P-Aej"/>
                             </mask>
                         </variation>
                     </view>
