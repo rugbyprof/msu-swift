@@ -59,7 +59,7 @@ if(hasheader == true){
 
 ```swift
 for (key,val) in dictionary {
-    println(\(key):\(val))
+    println("\(key):\(val)")
 }
 ```
 
