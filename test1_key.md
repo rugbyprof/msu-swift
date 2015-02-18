@@ -1,7 +1,7 @@
 ***Question 1***
 
-var = variable
-let = constant
+`var = variable`<br>
+`let = constant`
 
 Difference is `let` creates an immutable instance of a value, but can be more efficient for your program to use.
 
