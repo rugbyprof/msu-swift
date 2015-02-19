@@ -26,7 +26,7 @@ c=1
 ***Question 4***
 
 ```swift
-var tupl = ("1":"one","2":"two","3":"three","4":"four")
+var tupl = (1:"one",2:"two",3:"three",4:"four")
 var dict = ["1":"one","2":"two","3":"three","4":"four"]
 ```
 ***Question 5***
