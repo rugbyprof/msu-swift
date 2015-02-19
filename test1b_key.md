@@ -5,9 +5,11 @@ var area = (Double)radius * (Double)radius * pi
 
 ***Question 2***
 
+```swift
 for i in 0..<MyArray.count {
     println(MyArray[i])
 }
+```
 
 ***Question 3***
 
