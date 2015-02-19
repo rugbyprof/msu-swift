@@ -130,11 +130,11 @@ Yes. Because CompassPoint is an enumerated type and the switch has a case for ev
 var area = (Double)radius * (Double)radius * pi
 
 ***Question 19***
-
+```swift
 for i in 0..<MyArray.count {
     println(MyArray[i])
 }
-
+```
 ***Question 20***
 
 ```swift
