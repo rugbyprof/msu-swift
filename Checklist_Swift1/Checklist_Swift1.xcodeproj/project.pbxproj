@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		85C069D71A9C192900B5D048 /* ChecklistItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C069D61A9C192900B5D048 /* ChecklistItem.swift */; };
+		85C069DE1A9C3F1200B5D048 /* AddItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C069DD1A9C3F1200B5D048 /* AddItemViewController.swift */; };
 		85FE28E01A9AAC0F00CB028C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FE28DF1A9AAC0F00CB028C /* AppDelegate.swift */; };
 		85FE28E21A9AAC0F00CB028C /* ChecklistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FE28E11A9AAC0F00CB028C /* ChecklistViewController.swift */; };
 		85FE28E51A9AAC0F00CB028C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85FE28E31A9AAC0F00CB028C /* Main.storyboard */; };
@@ -26,6 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		85C069D61A9C192900B5D048 /* ChecklistItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChecklistItem.swift; path = ../ChecklistItem.swift; sourceTree = "<group>"; };
+		85C069DD1A9C3F1200B5D048 /* AddItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddItemViewController.swift; path = ../AddItemViewController.swift; sourceTree = "<group>"; };
 		85FE28DA1A9AAC0F00CB028C /* Checklist_Swift1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Checklist_Swift1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		85FE28DE1A9AAC0F00CB028C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		85FE28DF1A9AAC0F00CB028C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +60,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		85C069D81A9C193800B5D048 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				85C069D61A9C192900B5D048 /* ChecklistItem.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		85C069D91A9C194000B5D048 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				85FE28E31A9AAC0F00CB028C /* Main.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		85C069DA1A9C194600B5D048 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				85C069DD1A9C3F1200B5D048 /* AddItemViewController.swift */,
+				85FE28E11A9AAC0F00CB028C /* ChecklistViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
 		85FE28D11A9AAC0F00CB028C = {
 			isa = PBXGroup;
 			children = (
@@ -77,9 +106,10 @@
 		85FE28DC1A9AAC0F00CB028C /* Checklist_Swift1 */ = {
 			isa = PBXGroup;
 			children = (
+				85C069DA1A9C194600B5D048 /* Controllers */,
+				85C069D91A9C194000B5D048 /* Views */,
+				85C069D81A9C193800B5D048 /* Models */,
 				85FE28DF1A9AAC0F00CB028C /* AppDelegate.swift */,
-				85FE28E11A9AAC0F00CB028C /* ChecklistViewController.swift */,
-				85FE28E31A9AAC0F00CB028C /* Main.storyboard */,
 				85FE28E61A9AAC0F00CB028C /* Images.xcassets */,
 				85FE28E81A9AAC0F00CB028C /* LaunchScreen.xib */,
 				85FE28DD1A9AAC0F00CB028C /* Supporting Files */,
@@ -213,6 +243,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				85FE28E21A9AAC0F00CB028C /* ChecklistViewController.swift in Sources */,
+				85C069DE1A9C3F1200B5D048 /* AddItemViewController.swift in Sources */,
+				85C069D71A9C192900B5D048 /* ChecklistItem.swift in Sources */,
 				85FE28E01A9AAC0F00CB028C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -407,6 +439,7 @@
 				85FE28FB1A9AAC0F00CB028C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		85FE28FC1A9AAC0F00CB028C /* Build configuration list for PBXNativeTarget "Checklist_Swift1Tests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +448,7 @@
 				85FE28FE1A9AAC0F00CB028C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
