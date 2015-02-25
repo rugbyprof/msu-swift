@@ -10,18 +10,40 @@ import UIKit
 
 class ChecklistViewController: UITableViewController {
     
-    var row0text = "Walk the dog"
-    var row1text = "Brush teeth"
-    var row2text = "Learn iOS development"
-    var row3text = "Soccer practice"
-    var row4text = "Eat ice cream"
-    
-    var row0checked = false
-    var row1checked = true
-    var row2checked = false
-    var row3checked = true
-    var row4checked = false
+    var items: [ChecklistItem]
 
+    required init(coder aDecoder: NSCoder) {
+        
+        items = ChecklistItem()
+        
+        let row0item = ChecklistItem()
+        row0item.text = "Walk the dog"
+        row0item.checked = false
+        items.append(row0item)
+        
+        let row1item = ChecklistItem()
+        row1item.text = "Brush my teeth"
+        row1item.checked = true
+        items.append(row1item)
+        
+        let row2item = ChecklistItem()
+        row2item.text = "Learn iOS development"
+        row2item.checked = true
+        items.append(row2item)
+        
+        let row3item = ChecklistItem()
+        row3item.text = "Soccer practice"
+        row3item.checked = false
+        items.append(row3item)
+        
+        let row4item = ChecklistItem()
+        row4item.text = "Eat ice cream"
+        row4item.checked = true
+        items.append(row4item)
+        
+        super.init(coder: aDecoder)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.rowHeight = 44
@@ -46,15 +68,15 @@ class ChecklistViewController: UITableViewController {
         let label = cell.viewWithTag(1000) as UILabel
 
         if indexPath.row == 0 {
-            label.text = "Walk the dog"
+            label.text = row0item.text
         } else if indexPath.row == 1 {
-            label.text = "Brush my teeth"
+            label.text = row1item.text
         } else if indexPath.row == 2 {
-            label.text = "Learn iOS development"
+            label.text = row2item.text
         } else if indexPath.row == 3 {
-            label.text = "Soccer practice"
+            label.text = row3item.text
         } else if indexPath.row == 4 {
-            label.text = "Eat ice cream"
+            label.text = row4item.text
         }
         
         configureCheckmarkForCell(cell, indexPath: indexPath)
@@ -68,15 +90,15 @@ class ChecklistViewController: UITableViewController {
         if let cell = tableView.cellForRowAtIndexPath(indexPath) {
         
             if indexPath.row == 0 {
-                row0checked = !row0checked
+                row0item.checked = !row0item.checked
             } else if indexPath.row == 1 {
-                row1checked = !row1checked
+                row1item.checked = !row1item.checked
             } else if indexPath.row == 2 {
-                row2checked = !row2checked
+                row2item.checked = !row2item.checked
             } else if indexPath.row == 3 {
-                row3checked = !row3checked
+                row3item.checked = !row3item.checked
             } else if indexPath.row == 4 {
-                row4checked = !row4checked
+                row4item.checked = !row4item.checked
             }
         
             configureCheckmarkForCell(cell, indexPath: indexPath)
@@ -89,15 +111,15 @@ class ChecklistViewController: UITableViewController {
     func configureCheckmarkForCell(cell: UITableViewCell, indexPath: NSIndexPath) {
         var isChecked = false
         if indexPath.row == 0 {
-            isChecked = row0checked
+            isChecked = row0item.checked
         } else if indexPath.row == 1 {
-            isChecked = row1checked
+            isChecked = row1item.checked
         } else if indexPath.row == 2 {
-            isChecked = row2checked
+            isChecked = row2item.checked
         } else if indexPath.row == 3 {
-            isChecked = row3checked
+            isChecked = row3item.checked
         } else if indexPath.row == 4 {
-            isChecked = row4checked
+            isChecked = row4item.checked
         }
             
         if isChecked {
