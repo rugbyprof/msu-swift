@@ -249,6 +249,7 @@ class ViewController: UIViewController {
 *   exists(string) returns Bool
 *   read(string,encoding) returns String
 *   write(string,string,encoding,error) returns Bool
+* A string to hex method can be found here: https://gist.github.com/arshad/de147c42d7b3063ef7bc
 ********************************************************************************************/
 class File {
     
