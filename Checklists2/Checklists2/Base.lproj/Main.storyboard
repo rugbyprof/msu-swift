@@ -33,10 +33,11 @@
                             <outlet property="delegate" destination="hNI-wd-bsb" id="cEb-Xl-E8d"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="jJc-sD-Pbv"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WH6-qv-u6i" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="415" y="436"/>
+            <point key="canvasLocation" x="-270" y="429"/>
         </scene>
     </scenes>
 </document>
