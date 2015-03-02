@@ -33,7 +33,6 @@
                             <outlet property="delegate" destination="hNI-wd-bsb" id="cEb-Xl-E8d"/>
                         </connections>
                     </tableView>
-<<<<<<< HEAD
                     <navigationItem key="navigationItem" title="Checklists" id="Xdm-te-OgN">
                         <barButtonItem key="leftBarButtonItem" style="done" systemItem="done" id="OLw-47-mHn"/>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="HYN-PE-YmY"/>
@@ -41,7 +40,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WH6-qv-u6i" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1140" y="266"/>
+            <point key="canvasLocation" x="1137" y="436"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="VBc-Ch-lsO">
@@ -60,13 +59,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vSy-8k-h8h" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="415" y="436"/>
-=======
-                    <navigationItem key="navigationItem" id="jJc-sD-Pbv"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="WH6-qv-u6i" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-270" y="429"/>
->>>>>>> aa0c3cc5b36d2a1f8c8e2f982f0ecd191d154972
         </scene>
     </scenes>
 </document>
