@@ -9,6 +9,11 @@
 import UIKit
 
 
+protocol AddItemViewControllerDelegate: class {
+    func addItemViewControllerDidCancel(controller: AddItemViewController)
+    func addItemViewController(controller: AddItemViewController, didFinishAddingItem item: ChecklistItem)
+}
+
 
 class AddItemViewController: UITableViewController, UITextFieldDelegate {
     
@@ -17,16 +22,16 @@ class AddItemViewController: UITableViewController, UITextFieldDelegate {
     
     @IBOutlet weak var doneBarButton: UIBarButtonItem!
     
-    @IBAction func done(sender: AnyObject) {
-        println("Contents of the text field: \(textField.text)")
-        
-        let item = ChecklistItem()
-        
-        dismissViewControllerAnimated(true, completion: nil)
+    weak var delegate: AddItemViewControllerDelegate?
+    
+    @IBAction func cancel() {
+        delegate?.addItemViewControllerDidCancel(self)
     }
-
-    @IBAction func cancel(sender: AnyObject) {
-        dismissViewControllerAnimated(true, completion: nil)
+    @IBAction func done() {
+        let item = ChecklistItem()
+        item.text = textField.text
+        item.checked = false
+        delegate?.addItemViewController(self, didFinishAddingItem: item)
     }
     
     override func tableView(tableView: UITableView, willSelectRowAtIndexPath indexPath: NSIndexPath) -> NSIndexPath? {
