@@ -44,17 +44,6 @@ class ChecklistViewController: UITableViewController {
         super.init(coder: aDecoder)
     }
 
-    @IBAction func addItem() {
-        let newRowIndex = items.count
-        let item = ChecklistItem()
-        item.text = "I am a new row"
-        item.checked = false
-        items.append(item)
-        let indexPath = NSIndexPath(forRow: newRowIndex, inSection: 0)
-        let indexPaths = [indexPath]
-        tableView.insertRowsAtIndexPaths(indexPaths,withRowAnimation: .Automatic)
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.rowHeight = 44
@@ -62,6 +51,7 @@ class ChecklistViewController: UITableViewController {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
     }
 
     
@@ -73,9 +63,11 @@ class ChecklistViewController: UITableViewController {
     override func tableView(tableView: UITableView,cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCellWithIdentifier("ChecklistItem")as UITableViewCell
+        
         let label = cell.viewWithTag(1000) as UILabel
         
         label.text = items[indexPath.row].text
+
         configureCheckmarkForCell(cell, indexPath: indexPath)
         
         return cell
@@ -86,6 +78,7 @@ class ChecklistViewController: UITableViewController {
         if let cell = tableView.cellForRowAtIndexPath(indexPath) {
         
             items[indexPath.row].checked = !items[indexPath.row].checked
+
             configureCheckmarkForCell(cell, indexPath: indexPath)
         
         }
@@ -93,36 +86,14 @@ class ChecklistViewController: UITableViewController {
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
     }
     
-    override func tableView(tableView: UITableView,commitEditingStyle editingStyle: UITableViewCellEditingStyle,forRowAtIndexPath indexPath: NSIndexPath) {
-
-        items.removeAtIndex(indexPath.row)
-        let indexPaths = [indexPath]
-        
-        tableView.deleteRowsAtIndexPaths(indexPaths,withRowAnimation: .Automatic)
-        
-    }
-    
     func configureCheckmarkForCell(cell: UITableViewCell, indexPath: NSIndexPath) {
-        
         if items[indexPath.row].checked {
             cell.accessoryType = .Checkmark
         } else {
             cell.accessoryType = .None
         }
-        
+                    
     }
-    
-    func addItemViewControllerDidCancel(controller: AddItemViewController) {
-        
-        dismissViewControllerAnimated(true, completion: nil)
-        
-    }
-    
-    func addItemViewController(controller: AddItemViewController,didFinishAddingItem item: ChecklistItem) {
-        
-        dismissViewControllerAnimated(true, completion: nil)
-        
-    }
-    
 
 }
+

@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8515980A1AA4F5A800A4AF86 /* AddItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 851598091AA4F5A800A4AF86 /* AddItemViewController.swift */; };
 		85FE290E1A9E4B2800CB028C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FE290D1A9E4B2800CB028C /* AppDelegate.swift */; };
 		85FE29101A9E4B2800CB028C /* ChecklistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FE290F1A9E4B2800CB028C /* ChecklistViewController.swift */; };
 		85FE29131A9E4B2800CB028C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85FE29111A9E4B2800CB028C /* Main.storyboard */; };
@@ -28,7 +27,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		851598091AA4F5A800A4AF86 /* AddItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddItemViewController.swift; path = ../AddItemViewController.swift; sourceTree = "<group>"; };
 		85FE29081A9E4B2800CB028C /* Checklists2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Checklists2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		85FE290C1A9E4B2800CB028C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		85FE290D1A9E4B2800CB028C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -120,7 +118,6 @@
 		85FE292D1A9E4B5800CB028C /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				851598091AA4F5A800A4AF86 /* AddItemViewController.swift */,
 				85FE29301A9E66DA00CB028C /* ChecklistItem.swift */,
 			);
 			name = Models;
@@ -243,7 +240,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				85FE29101A9E4B2800CB028C /* ChecklistViewController.swift in Sources */,
-				8515980A1AA4F5A800A4AF86 /* AddItemViewController.swift in Sources */,
 				85FE29311A9E66DA00CB028C /* ChecklistItem.swift in Sources */,
 				85FE290E1A9E4B2800CB028C /* AppDelegate.swift in Sources */,
 			);
@@ -439,7 +435,6 @@
 				85FE29291A9E4B2800CB028C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 		85FE292A1A9E4B2800CB028C /* Build configuration list for PBXNativeTarget "Checklists2Tests" */ = {
 			isa = XCConfigurationList;
@@ -448,7 +443,6 @@
 				85FE292C1A9E4B2800CB028C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
