@@ -24,15 +24,15 @@ class AddItemViewController: UITableViewController, UITextFieldDelegate {
     
     weak var delegate: AddItemViewControllerDelegate?
     
-    @IBAction func cancel() {
-        delegate?.addItemViewControllerDidCancel(self)
-    }
-    @IBAction func done() {
-        let item = ChecklistItem()
-        item.text = textField.text
-        item.checked = false
-        delegate?.addItemViewController(self, didFinishAddingItem: item)
-    }
+//    @IBAction func cancel() {
+//        delegate?.addItemViewControllerDidCancel(self)
+//    }
+//    @IBAction func done() {
+//        let item = ChecklistItem()
+//        item.text = textField.text
+//        item.checked = false
+//        delegate?.addItemViewController(self, didFinishAddingItem: item)
+//    }
     
     override func tableView(tableView: UITableView, willSelectRowAtIndexPath indexPath: NSIndexPath) -> NSIndexPath? {
         return nil

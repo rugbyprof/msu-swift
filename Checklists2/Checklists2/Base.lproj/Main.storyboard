@@ -37,7 +37,7 @@
                         <barButtonItem key="leftBarButtonItem" style="done" systemItem="done" id="OLw-47-mHn"/>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="HYN-PE-YmY">
                             <connections>
-                                <segue destination="Whm-7B-dPN" kind="presentation" id="sqn-R4-81P"/>
+                                <segue destination="Whm-7B-dPN" kind="presentation" identifier="AddItem" id="sqn-R4-81P"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
