@@ -14,7 +14,11 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
+<<<<<<< HEAD
                BlueprintIdentifier = "85291F471AA76C18001EA02D"
+=======
+               BlueprintIdentifier = "85CA48C31AA78E67009A311C"
+>>>>>>> 3dbf18b2d4cd7c9d81f25fd4d912b4ec7d717d1f
                BuildableName = "Delegate1.app"
                BlueprintName = "Delegate1"
                ReferencedContainer = "container:Delegate1.xcodeproj">
@@ -28,7 +32,11 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
+<<<<<<< HEAD
                BlueprintIdentifier = "85291F5C1AA76C18001EA02D"
+=======
+               BlueprintIdentifier = "85CA48D81AA78E67009A311C"
+>>>>>>> 3dbf18b2d4cd7c9d81f25fd4d912b4ec7d717d1f
                BuildableName = "Delegate1Tests.xctest"
                BlueprintName = "Delegate1Tests"
                ReferencedContainer = "container:Delegate1.xcodeproj">
@@ -46,7 +54,11 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
+<<<<<<< HEAD
                BlueprintIdentifier = "85291F5C1AA76C18001EA02D"
+=======
+               BlueprintIdentifier = "85CA48D81AA78E67009A311C"
+>>>>>>> 3dbf18b2d4cd7c9d81f25fd4d912b4ec7d717d1f
                BuildableName = "Delegate1Tests.xctest"
                BlueprintName = "Delegate1Tests"
                ReferencedContainer = "container:Delegate1.xcodeproj">
@@ -56,7 +68,11 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
+<<<<<<< HEAD
             BlueprintIdentifier = "85291F471AA76C18001EA02D"
+=======
+            BlueprintIdentifier = "85CA48C31AA78E67009A311C"
+>>>>>>> 3dbf18b2d4cd7c9d81f25fd4d912b4ec7d717d1f
             BuildableName = "Delegate1.app"
             BlueprintName = "Delegate1"
             ReferencedContainer = "container:Delegate1.xcodeproj">
@@ -75,7 +91,11 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
+<<<<<<< HEAD
             BlueprintIdentifier = "85291F471AA76C18001EA02D"
+=======
+            BlueprintIdentifier = "85CA48C31AA78E67009A311C"
+>>>>>>> 3dbf18b2d4cd7c9d81f25fd4d912b4ec7d717d1f
             BuildableName = "Delegate1.app"
             BlueprintName = "Delegate1"
             ReferencedContainer = "container:Delegate1.xcodeproj">
@@ -93,7 +113,11 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
+<<<<<<< HEAD
             BlueprintIdentifier = "85291F471AA76C18001EA02D"
+=======
+            BlueprintIdentifier = "85CA48C31AA78E67009A311C"
+>>>>>>> 3dbf18b2d4cd7c9d81f25fd4d912b4ec7d717d1f
             BuildableName = "Delegate1.app"
             BlueprintName = "Delegate1"
             ReferencedContainer = "container:Delegate1.xcodeproj">

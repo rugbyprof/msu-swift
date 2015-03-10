@@ -2,7 +2,6 @@
 <Bucket
    type = "1"
    version = "2.0">
-<<<<<<< HEAD
    <Breakpoints>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
@@ -11,16 +10,14 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Checklists2/ChecklistViewController.swift"
-            timestampString = "446588720.791839"
+            timestampString = "447116290.849883"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "11"
-            endingLineNumber = "11"
+            startingLineNumber = "135"
+            endingLineNumber = "135"
             landmarkName = "ChecklistViewController"
             landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
-=======
->>>>>>> aa0c3cc5b36d2a1f8c8e2f982f0ecd191d154972
 </Bucket>

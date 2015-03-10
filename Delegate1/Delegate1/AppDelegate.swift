@@ -3,7 +3,11 @@
 //  Delegate1
 //
 //  Created by Terry Griffin on 3/4/15.
+<<<<<<< HEAD
 //  Copyright (c) 2015 Terry Griffin. All rights reserved.
+=======
+//  Copyright (c) 2015 mwsu. All rights reserved.
+>>>>>>> 3dbf18b2d4cd7c9d81f25fd4d912b4ec7d717d1f
 //
 
 import UIKit
