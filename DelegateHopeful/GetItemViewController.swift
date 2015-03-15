@@ -8,41 +8,14 @@
 
 import UIKit
 
-protocol GetItemViewControllerDelegate: class {
-    func getItemViewControllerDidCancel(controller: GetItemViewController)
-    func getItemViewController(controller: GetItemViewController, didFinishAddingItem item: String)
+// set up the setDateValueDelegate protocol with the set date function
+protocol setTextValueDelegate {
+    func text(value: String)
 }
 
-class GetItemViewController : UITableViewController {
+class GetItemViewController : UIViewController {
     
-    @IBOutlet weak var textField: UITextField!
-    @IBOutlet weak var doneBarButton: UIBarButtonItem!
-    
-    weak var delegate: GetItemViewControllerDelegate?
-    
-    @IBAction func done(sender: AnyObject) {
-        dismissViewControllerAnimated(true, completion: nil)
-    }
-    
-    @IBAction func cancel(sender: AnyObject) {
-        dismissViewControllerAnimated(true, completion: nil)
-    }
-    
-    override func viewWillAppear(animated: Bool) {
-        super.viewWillAppear(animated)
-        textField.becomeFirstResponder()
-    }
-    
-    func textField(textField:UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool{
-        let oldText: NSString = textField.text
-        let newText: NSString = oldText.stringByReplacingCharactersInRange(range,withString: string)
-        
-        doneBarButton.enabled = (newText.length > 0)
-        
-        println(newText.length)
-        
-        return true
-    }
+var delegate: setTextValueDelegate?
     
     
 }

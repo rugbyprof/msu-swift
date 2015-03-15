@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  DelegateHopeful
+//  DelegateExample
 //
 //  Created by Terry Griffin on 3/9/15.
 //  Copyright (c) 2015 Terry Griffin. All rights reserved.
@@ -8,9 +8,8 @@
 
 import UIKit
 
-class MainViewController: UIViewControllerm, setTextValueDelegate {
+class MainViewController: UIViewController {
 
-    @IBOutlet weak var givemetext: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
