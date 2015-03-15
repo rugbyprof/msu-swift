@@ -14,7 +14,11 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
+<<<<<<< HEAD
                BlueprintIdentifier = "85C94B8F1AAE90AF00AAEF65"
+=======
+               BlueprintIdentifier = "851AC7B81AAF9606007609EB"
+>>>>>>> 3a168314d86433963d920f23b8f21785ded89072
                BuildableName = "DelegateExample.app"
                BlueprintName = "DelegateExample"
                ReferencedContainer = "container:DelegateExample.xcodeproj">
@@ -28,7 +32,11 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
+<<<<<<< HEAD
                BlueprintIdentifier = "85C94BA41AAE90B000AAEF65"
+=======
+               BlueprintIdentifier = "851AC7CD1AAF9607007609EB"
+>>>>>>> 3a168314d86433963d920f23b8f21785ded89072
                BuildableName = "DelegateExampleTests.xctest"
                BlueprintName = "DelegateExampleTests"
                ReferencedContainer = "container:DelegateExample.xcodeproj">
@@ -46,7 +54,11 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
+<<<<<<< HEAD
                BlueprintIdentifier = "85C94BA41AAE90B000AAEF65"
+=======
+               BlueprintIdentifier = "851AC7CD1AAF9607007609EB"
+>>>>>>> 3a168314d86433963d920f23b8f21785ded89072
                BuildableName = "DelegateExampleTests.xctest"
                BlueprintName = "DelegateExampleTests"
                ReferencedContainer = "container:DelegateExample.xcodeproj">
@@ -56,7 +68,11 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
+<<<<<<< HEAD
             BlueprintIdentifier = "85C94B8F1AAE90AF00AAEF65"
+=======
+            BlueprintIdentifier = "851AC7B81AAF9606007609EB"
+>>>>>>> 3a168314d86433963d920f23b8f21785ded89072
             BuildableName = "DelegateExample.app"
             BlueprintName = "DelegateExample"
             ReferencedContainer = "container:DelegateExample.xcodeproj">
@@ -75,7 +91,11 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
+<<<<<<< HEAD
             BlueprintIdentifier = "85C94B8F1AAE90AF00AAEF65"
+=======
+            BlueprintIdentifier = "851AC7B81AAF9606007609EB"
+>>>>>>> 3a168314d86433963d920f23b8f21785ded89072
             BuildableName = "DelegateExample.app"
             BlueprintName = "DelegateExample"
             ReferencedContainer = "container:DelegateExample.xcodeproj">
@@ -93,7 +113,11 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
+<<<<<<< HEAD
             BlueprintIdentifier = "85C94B8F1AAE90AF00AAEF65"
+=======
+            BlueprintIdentifier = "851AC7B81AAF9606007609EB"
+>>>>>>> 3a168314d86433963d920f23b8f21785ded89072
             BuildableName = "DelegateExample.app"
             BlueprintName = "DelegateExample"
             ReferencedContainer = "container:DelegateExample.xcodeproj">
