@@ -2,13 +2,8 @@
 //  DelegateExampleTests.swift
 //  DelegateExampleTests
 //
-<<<<<<< HEAD
-//  Created by Terry Griffin on 3/9/15.
-//  Copyright (c) 2015 Terry Griffin. All rights reserved.
-=======
 //  Created by Terry Griffin on 3/10/15.
 //  Copyright (c) 2015 mwsu. All rights reserved.
->>>>>>> 3a168314d86433963d920f23b8f21785ded89072
 //
 
 import UIKit

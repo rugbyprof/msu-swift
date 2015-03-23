@@ -7,11 +7,7 @@
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
-<<<<<<< HEAD
 	<string>Mwsu.$(PRODUCT_NAME:rfc1034identifier)</string>
-=======
-	<string>com.mwsu.$(PRODUCT_NAME:rfc1034identifier)</string>
->>>>>>> 3a168314d86433963d920f23b8f21785ded89072
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
