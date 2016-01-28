@@ -14,14 +14,14 @@ It is convention to give files that are Bash scripts an extension of .sh (`myscr
 - Permission need to be correct. The file has to be executable.
 
 ```bash
-chmod 755 myscript.sh # Sets executable for Owner, Group, and All (as well as readable by all and writable by the owner)
+~$ chmod 755 myscript.sh # Sets executable for Owner, Group, and All (as well as readable by all and writable by the owner)
 ```
 
 or
 
 ```bash
-chmod u+x myscript.sh # Sets executable for owner
-chmod a+x myscript.sh # Sets executable for all
+~$ chmod u+x myscript.sh # Sets executable for owner
+~$ chmod a+x myscript.sh # Sets executable for all
 ```
 
 - `u`: the user who owns it
@@ -33,14 +33,14 @@ You can add more than just execute with the `+x`, but that's not for this lesson
 
 
 ```bash
-./myscript.sh
+~$ ./myscript.sh
 # Output: ./myscript.sh: Permission denied
-ls -l myscript.sh
+~$ ls -l myscript.sh
 #Output: -rw-r--r-- 18 owner group 4096 Feb 17 09:12 myscript.sh
-chmod 755 myscript.sh
-ls -l myscript.sh
+~$ chmod 755 myscript.sh
+~$ ls -l myscript.sh
 # Output: -rwxr-xr-x 18 owner group 4096 Feb 17 09:12 myscript.sh
-./myscript.sh
+~$ ./myscript.sh
 # Output: Hello World!
 ```
 
